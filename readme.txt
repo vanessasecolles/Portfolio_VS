@@ -10,6 +10,4 @@ Adjust Fonts (Optional): If you want to change fonts, you can usually do this th
 
 Preview and Test: After making changes, preview your website to ensure everything looks and functions as expected. Test your site on different devices and browsers to ensure responsiveness and compatibility.
 
-Publish Your Website: Once you're satisfied with the changes, publish your 
-website so it's accessible to visitors. (Use https://ngrok.com/)
 
