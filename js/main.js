@@ -137,73 +137,73 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
-       nav = $('.main-navigation');
+//    var toggleButton = $('.menu-toggle'),
+//        nav = $('.main-navigation');
 
-   // toggle button
-   toggleButton.on('click', function(e) {
+//    // toggle button
+//    toggleButton.on('click', function(e) {
 
-		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
+// 		e.preventDefault();
+// 		toggleButton.toggleClass('is-clicked');
+// 		nav.slideToggle();
 
-	});
+// 	});
 
-   // nav items
-  	nav.find('li a').on("click", function() {   
+//    // nav items
+//   	nav.find('li a').on("click", function() {   
 
-   	// update the toggle button 		
-   	toggleButton.toggleClass('is-clicked'); 
-   	// fadeout the navigation panel
-   	nav.fadeOut();   		
+//    	// update the toggle button 		
+//    	toggleButton.toggleClass('is-clicked'); 
+//    	// fadeout the navigation panel
+//    	nav.fadeOut();   		
    	     
-  	});
+//   	});
 
 
-   /*---------------------------------------------------- */
-  	/* Highlight the current section in the navigation bar
-  	------------------------------------------------------ */
-	var sections = $("section"),
-	navigation_links = $("#main-nav-wrap li a");	
+//    /*---------------------------------------------------- */
+//   	/* Highlight the current section in the navigation bar
+//   	------------------------------------------------------ */
+// 	var sections = $("section"),
+// 	navigation_links = $("#main-nav-wrap li a");	
 
-	sections.waypoint( {
+// 	sections.waypoint( {
 
-       handler: function(direction) {
+//        handler: function(direction) {
 
-		   var active_section;
+// 		   var active_section;
 
-			active_section = $('section#' + this.element.id);
+// 			active_section = $('section#' + this.element.id);
 
-			if (direction === "up") active_section = active_section.prev();
+// 			if (direction === "up") active_section = active_section.prev();
 
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+// 			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
 
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
+//          navigation_links.parent().removeClass("current");
+// 			active_link.parent().addClass("current");
 
-		}, 
+// 		}, 
 
-		offset: '25%'
-	});
+// 		offset: '25%'
+// 	});
 
 
-	/*---------------------------------------------------- */
-  	/* Smooth Scrolling
-  	------------------------------------------------------ */
-  	$('.smoothscroll').on('click', function (e) {
+// 	/*---------------------------------------------------- */
+//   	/* Smooth Scrolling
+//   	------------------------------------------------------ */
+//   	$('.smoothscroll').on('click', function (e) {
 	 	
-	 	e.preventDefault();
+// 	 	e.preventDefault();
 
-   	var target = this.hash,
-    	$target = $(target);
+//    	var target = this.hash,
+//     	$target = $(target);
 
-    	$('html, body').stop().animate({
-       	'scrollTop': $target.offset().top
-      }, 800, 'swing', function () {
-      	window.location.hash = target;
-      });
+//     	$('html, body').stop().animate({
+//        	'scrollTop': $target.offset().top
+//       }, 800, 'swing', function () {
+//       	window.location.hash = target;
+//       });
 
-  	});  
+//   	});  
   
 
    /*---------------------------------------------------- */
@@ -216,6 +216,12 @@
 	/*	contact form
 	------------------------------------------------------ */
 
+
+
+
+
+
+	
 	/* local validation */
 	$('#contactForm').validate({
 

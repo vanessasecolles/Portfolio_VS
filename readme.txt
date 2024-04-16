@@ -8,6 +8,4 @@ Edit CSS: If you have access to the CSS files, you can manually edit the color c
 
 Adjust Fonts (Optional): If you want to change fonts, you can usually do this through the same methods as changing colors. Some templates may allow font customization through a graphical interface, while others may require CSS editing.
 
-Preview and Test: After making changes, preview your website to ensure everything looks and functions as expected. Test your site on different devices and browsers to ensure responsiveness and compatibility.
-
 

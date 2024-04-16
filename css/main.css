@@ -1094,15 +1094,15 @@ header .row {
 	min-height: 66px;
 }
 header .top-bar {
-	display: block;
-	background: #000000;
+ 	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
 	left: 90px;
 	top: 0;
 }
-header .logo {
+
+/* header .logo {
 	float: left;
 	margin-left: 20px;
 	margin-right: 50px;
@@ -1119,9 +1119,9 @@ header .logo a {
 	color: transparent;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	background: url("../images/Logo.svg") no-repeat center;
 	background-size: 92px 15px;
-}
+} */
 
 /**
  * menu toggle - (_layout.css)
@@ -1218,42 +1218,46 @@ header .logo a {
 
 /* navigation panel */
 #main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
+	display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    min-height: 66px;
+    z-index: 10;
+	padding: 0 20px;
 }
 
-/* dropdown nav */
+/* nav */
 .main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
+	display: flex;
+	justify-content: flex-end; 
+    align-items: center;
+	list-style: none;
+	margin-left: auto;
 }
+
+
 .main-navigation > li {
-	display: block;
-	height: auto;
-	text-align: left;
-	padding: 0;
+	margin-right: 20px;
+
+
 }
 .main-navigation li a {
 	display: block;
 	color: #FFFFFF;
-	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
+	/* width: auto; */
+	padding: 2.2rem;
 	border: none;
+	
 }
 .main-navigation li a:hover {
 	color: #FF0077;
-	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
@@ -1265,7 +1269,10 @@ header .logo a {
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+
+
+
+/* @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
 	}
@@ -1284,9 +1291,33 @@ header .logo a {
 	header .top-bar {
 		left: 25px;
 	}
+} */
+
+@media only screen and (max-width: 1024px) {
+    #main-nav-wrap {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    #main-nav-wrap {
+        padding: 0 5px; /* Further adjust padding for smaller screens */
+    }
 
+    .main-navigation > li {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-navigation > li {
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+
+    .main-navigation li a {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
 /** 
  * ===================================================================
  * 10. intro - (_layout.scss) 
