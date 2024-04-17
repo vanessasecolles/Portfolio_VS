@@ -217,6 +217,13 @@ hr {
 	height: 0;
 }
 
+nav .logo {
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+  
+}
 
 ol {
 	list-style: decimal;
